@@ -7,13 +7,11 @@
 </head>
 <body>
 <h1><a href="main.html">NoCopyrightSounds</a></h1>
-<input type="button" value="thistle" onclick="
-document.querySelector('body').style.backgroundColor ='paleturquoise';
-document.querySelector('body').style.color='thistle';
+<input id="night_day" type="button" value="night" onclick="
+  nightDayHandler(this);
 ">
-<input type="button" value="paleturquoise" onclick="
-document.querySelector('body').style.backgroundColor ='thistle';
-document.querySelector('body').style.color='paleturquoise';
+<input id="night_day" type="button" value="night" onclick="
+  nightDayHandler(this);
 ">
 <ol>
   <li><a href="1.html"> NCS</a></li>
@@ -71,3 +69,33 @@ document.querySelector('body').style.color='paleturquoise';
 <script>
   document.write(1<1);
 </script>
+
+<h1>Function</h1>
+   <h2>Basic</h2>
+   <ul>
+     <script>
+       function two(){
+         document.write('<li>2-1</li>');
+         document.write('<li>2-2</li>');
+       }
+       document.write('<li>1</li>');
+       two();
+       document.write('<li>3</li>');
+       two();
+     </script>
+   </ul>
+
+   <h1>Loop & Array</h1>
+       <script>
+         var coworkers = ['egoing','leezche','duru','taeho'];
+       </script>
+       <h2>Co workers</h2>
+       <ul>
+         <script>
+           var i = 0;
+           while(i < coworkers.length){
+             document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+             i = i + 1;
+           }
+         </script>
+   </ul>
